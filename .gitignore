@@ -1,0 +1,24 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Editors
+.vscode/
+.idea/
+
+# PQS/Security
+*.key  # Private keys
+*.pem
+secrets/
