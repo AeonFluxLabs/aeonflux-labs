@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Helvetica+Neue&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333333;
+	background: #FFFFFF;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+header {
+	padding: 40px 20px;
+	text-align: center;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+	color: #001F3F;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+nav {
+	text-align: center;
+	padding: 20px;
+}
+
+nav a {
+	margin: 0 15px;
+	color: #001F3F;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #001F3F;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+.cta:hover {
+	background: #003366;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	border-top: 1px solid #E0E0E0;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+@media (max-width: 768px) {
+	h1 { font-size: 2em; }
+	nav a { display: block; margin: 10px 0; }
+}
