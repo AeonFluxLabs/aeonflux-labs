@@ -1,6 +1,6 @@
 # AeonFlux Labs
 Time-first constraint-coherent AI ecosystems with hybrid–quantum extensions 
-Usefum for exploring admissible trajectories across temporal horizons.
+Useful for exploring admissible trajectories across temporal horizons.
 
 ## License
 MIT License — see [LICENSE](LICENSE) for details.
