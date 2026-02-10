@@ -18,6 +18,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 - `meta_logical_queries/` — Conflict resolution simulations
 
 ## Website
-Basic site hosted via Cloudflare Pages from `index.html`. Expand as needed.
+Site hosted via Cloudflare Pages from `index.html`.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
