@@ -1,6 +1,6 @@
 # AeonFlux Labs
-Constraint-coherent, time-first AI–quantum systems  
-Exploring admissible trajectories across temporal horizons.
+Time-first constraint-coherent AI ecosystems with hybrid–quantum extensions 
+Usefum for exploring admissible trajectories across temporal horizons.
 
 ## License
 MIT License — see [LICENSE](LICENSE) for details.
