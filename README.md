@@ -1,5 +1,6 @@
 # AeonFlux Labs
-Time-first constraint-coherent AI ecosystems with hybrid–quantum extensions 
+Time-first constraint-coherent AI ecosystems with hybrid–quantum extensions
+
 Useful for exploring admissible trajectories across temporal horizons.
 
 ## License
