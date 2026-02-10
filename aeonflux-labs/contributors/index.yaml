@@ -1,0 +1,10 @@
+contributors:
+  - id: example-human-001
+    type: human
+    display_name: Example Contributor
+    github_username: example-user
+    verified: false
+  - id: example-mcre-001
+    type: mc-re
+    display_name: Example Ensemble
+    certified: false
