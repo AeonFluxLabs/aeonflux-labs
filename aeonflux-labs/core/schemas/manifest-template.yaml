@@ -1,8 +1,0 @@
-# Example manifest.yaml
-epoch: genesis
-horizon: near
-trajectory_link: trajectories/graphs/example-001
-validation_status: draft
-ai_quantum_compat: hybrid
-vfa_references:
-  - vfa-example-anchor-1
