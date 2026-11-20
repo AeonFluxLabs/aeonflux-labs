@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- ============================================================
+  CANONICAL METHOD NOTE — VERSION OF RECORD
+  AGS-7 · Admission Gates for Autonomous Systems · v1.0
+  Aeon Flux Labs · aeonfluxlabs.com
+  Corrections are APPENDED to the revision history.
+  Do not overwrite dated versions. Do not backdate datePublished.
+============================================================= -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AGS-7: Admission Gates for Autonomous Systems v1.0 | Aeon Flux Labs</title>
+<meta name="description" content="Seven admission gates applied before an autonomous AI initiative is licensed for construction. Each gate specifies its invariant, pass condition, required evidence, and failure signature.">
+<meta name="author" content="James Santsaver">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://aeonfluxlabs.com/methods/admission-gates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AGS-7: Admission Gates for Autonomous Systems">
+<meta property="og:description" content="Validation is an audit, not a vibe. Seven gates, each with a pass condition and required evidence.">
+<meta property="og:url" content="https://aeonfluxlabs.com/methods/admission-gates/">
+<meta property="og:site_name" content="Aeon Flux Labs">
+<meta property="article:published_time" content="2026-11-21">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "AGS-7: Admission Gates for Autonomous Systems",
+  "alternativeHeadline": "A dated method note on admissibility testing prior to construction authorization",
+  "description": "Seven admission gates applied before an autonomous AI initiative is licensed for construction, with invariants, pass conditions, required evidence, and failure signatures.",
+  "version": "1.0",
+  "datePublished": "2026-11-21",
+  "dateModified": "2026-11-21",
+  "inLanguage": "en-US",
+  "proficiencyLevel": "Expert",
+  "keywords": "AI governance, admission gates, autonomous agents, provenance, human-in-the-loop, As-Is audit, IPT, Validated Field Anchor",
+  "author": {
+    "@type": "Person",
+    "name": "James Santsaver",
+    "alternateName": "James Santsaver Sr",
+    "url": "https://santsaver.com",
+    "sameAs": "https://www.linkedin.com/in/santsaver"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aeon Flux Labs",
+    "url": "https://aeonfluxlabs.com"
+  },
+  "mainEntityOfPage": "https://aeonfluxlabs.com/methods/admission-gates/",
+  "isAccessibleForFree": true,
+  "citation": "Santsaver, J. (2026). AGS-7: Admission Gates for Autonomous Systems, v1.0. Aeon Flux Labs."
+}
+</script>
+
+<style>
+  :root{--ink:#16191d;--accent:#0f3d52;--rule:#d5d9dd;--paper:#fbfcfd;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+  main{max-width:52rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+  .kicker{font:600 .75rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  h1{font-size:2rem;line-height:1.2;margin:.4rem 0 .5rem;color:var(--accent)}
+  .lede{font-size:1.1rem;color:#3d4650;margin:0 0 1.2rem}
+  .meta{font:.82rem/1.6 var(--mono);color:#5a646e;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.6rem 0;margin-bottom:1.5rem}
+  .status{background:#f0f4f7;border-left:4px solid var(--accent);padding:.9rem 1.1rem;font-size:.9rem;margin-bottom:2rem}
+  h2{font-size:1.35rem;color:var(--accent);margin:2.4rem 0 .7rem;border-bottom:1px solid var(--rule);padding-bottom:.3rem}
+  h3{font-size:1.05rem;margin:1.8rem 0 .4rem;color:var(--accent)}
+  h3 .id{font-family:var(--mono);color:#7a8590;margin-right:.5rem}
+  .inv{font-style:italic;color:#3d4650;margin:.2rem 0 .7rem}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;margin:0 0 1rem}
+  th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border:1px solid var(--rule)}
+  th{width:9.5rem;background:#f0f4f7;font-weight:600;color:var(--accent)}
+  p{margin:0 0 1rem}
+  ol,ul{margin:0 0 1.2rem;padding-left:1.4rem}
+  li{margin-bottom:.45rem}
+  code,.mono{font-family:var(--mono);font-size:.88em}
+  .cite{background:#f0f4f7;border:1px solid var(--rule);padding:.9rem 1.1rem;font:.85rem/1.6 var(--mono);word-break:break-word}
+  footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.8rem;color:#6b7580}
+  a{color:var(--accent)}
+  @media print{body{background:#fff}.status{border-left:2px solid #000}}
+</style>
+</head>
+<body>
+<main>
+<article>
+  <p class="kicker">Method Note · Architectural Agentology</p>
+  <h1>AGS-7: Admission Gates for Autonomous Systems</h1>
+  <p class="lede">Admissibility testing applied before an autonomous AI initiative is licensed for construction.</p>
+  <p class="meta">
+    Version 1.0 · Published 21 November 2026 · James Santsaver<br>
+    Aeon Flux Labs · Canonical: https://aeonfluxlabs.com/methods/admission-gates/
+  </p>
+
+  <div class="status">
+    <strong>Status disclosure.</strong> AGS-7, the Identity–Purpose–Tolerance (IPT) constraint triple, and
+    Validated Field Anchors (VFA) are published here as architectural specification and audit method.
+    This note does not assert independently validated production deployment, third-party certification,
+    or regulatory approval. Implementations are assessed per engagement against the evidence requirements below.
+  </div>
+
+  <h2>1. Purpose and scope</h2>
+  <p>An autonomous system can execute a flawed objective with extraordinary efficiency. The purpose of AGS-7 is to determine admissibility <em>before</em> construction authority is granted, not to monitor symptoms afterward.</p>
+  <p>AGS-7 is the admissibility instrument applied during a fixed-scope, time-boxed <strong>As-Is architecture audit</strong>. The audit spans seven architectural layers, documented separately; the gates below are the tests applied across them. The gates are actor-agnostic: they interrogate an inbound human offer and an autonomous agent by the same criteria.</p>
+
+  <h2>2. The construction license rule</h2>
+  <p>Every engagement opens with an evidence-based As-Is audit. A To-Be engagement follows only when that audit licenses construction. Three outcomes are admissible:</p>
+  <ul>
+    <li><strong>Do not build.</strong> One or more gates fail without a viable remediation path.</li>
+    <li><strong>Build differently.</strong> Gates pass only under stated conditions; those conditions become contract terms.</li>
+    <li><strong>Build as proposed.</strong> All seven gates pass on inspectable evidence.</li>
+  </ul>
+  <p>The audit — not the pitch deck, not the vendor, not the recruiter — decides which outcome applies.</p>
+
+  <h2>3. The seven admission gates</h2>
+
+  <h3><span class="id">G1</span>The Epistemic Boundary</h3>
+  <p class="inv">Nothing enters as fact unless this layer admits it.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Every claim the system will act on carries a named source, a retrieval timestamp, and an admitting authority. Claims lacking any of the three are labelled <em>assertion</em> and cannot authorize action.</td></tr>
+    <tr><th>Required evidence</th><td>Claim register: claim, source, timestamp, admitting principal, assertion/fact classification.</td></tr>
+    <tr><th>Inbound tell</th><td>Employer, project, and intent asserted with zero admissible evidence.</td></tr>
+    <tr><th>Enterprise tell</th><td>Vendor benchmarks and demos accepted as audit. A demo is not an audit.</td></tr>
+  </table>
+
+  <h3><span class="id">G2</span>The Identity Gate</h3>
+  <p class="inv">Every actor presents a time-bound, revocable name.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Each identity — human, service, or agent — is bound to an accountable principal, expires, and can be revoked independently. Revocation demonstrably halts its paths. No shared or borrowed credentials.</td></tr>
+    <tr><th>Required evidence</th><td>Identity registry with expiry and principal binding; revocation procedure; record of last revocation drill.</td></tr>
+    <tr><th>Inbound tell</th><td>Account vintage presented as identity. A 2011 registration is a costume, not provenance.</td></tr>
+    <tr><th>Enterprise tell</th><td>Anonymous service accounts, shared API keys, agents acting on borrowed credentials.</td></tr>
+  </table>
+
+  <h3><span class="id">G3</span>The Action Sandbox</h3>
+  <p class="inv">Effects fire only inside declared rooms and declared tools.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Tool set and egress are enumerated and enforced at runtime. Acquisition of an undeclared capability halts the path rather than expanding the room.</td></tr>
+    <tr><th>Required evidence</th><td>Declared tool/room manifest; egress policy; enforcement point; denial log.</td></tr>
+    <tr><th>Inbound tell</th><td>The next move is always to leave the platform — WhatsApp, personal email, a "briefing document."</td></tr>
+    <tr><th>Enterprise tell</th><td>An agent quietly acquires a browser, a wallet, or a shell.</td></tr>
+  </table>
+
+  <h3><span class="id">G4</span>The Latency Toll</h3>
+  <p class="inv">Speed is priced. Unpriced haste dies at the gate.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Every expedited path carries an explicit cost in budget, risk, or scope, approved by the accountable principal. Consequential actions observe a declared minimum dwell.</td></tr>
+    <tr><th>Required evidence</th><td>Priced-expedite register; dwell policy; approval records.</td></tr>
+    <tr><th>Inbound tell</th><td>Flattery plus urgency — the scammer's clock.</td></tr>
+    <tr><th>Enterprise tell</th><td>"Ship the agent now, govern it later." Speed without a price is a liability wearing a deadline.</td></tr>
+  </table>
+
+  <h3><span class="id">G5</span>The Human Veto</h3>
+  <p class="inv">A named human can halt any path.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Every path has a named, reachable, authorized principal. Halt has been demonstrated under load within a stated bound. Veto authority is independent of the optimizing system.</td></tr>
+    <tr><th>Required evidence</th><td>Veto roster; halt procedure; last demonstrated halt time; independence attestation.</td></tr>
+    <tr><th>Inbound tell</th><td>"She is looking for someone." The unnamed principal is the tell.</td></tr>
+    <tr><th>Enterprise tell</th><td>No one can name the human who can stop the system mid-path. That is not a system; it is a bet.</td></tr>
+  </table>
+
+  <h3><span class="id">G6</span>The Provenance Spine</h3>
+  <p class="inv">Every decision carries an unbroken, inspectable origin trail.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Any consequential output traces to inputs, model and version, authority, and transformations without reliance on vendor assurance. Records are append-only; corrections are appended, never overwritten.</td></tr>
+    <tr><th>Required evidence</th><td>Decision lineage records; append-only ledger; correction-by-append policy.</td></tr>
+    <tr><th>Inbound tell</th><td>Profile history dissolves under inspection; the identity evaporates when tested.</td></tr>
+    <tr><th>Enterprise tell</th><td>Model authority, training data, and decision lineage dissolve into vendor assurances.</td></tr>
+  </table>
+
+  <h3><span class="id">G7</span>The Drift Interlock</h3>
+  <p class="inv">Constraints cannot rewrite themselves without human countersign.</p>
+  <table>
+    <tr><th>Pass condition</th><td>Prompts, policies, permissions, and objectives are version-controlled with countersigned change. An unsigned constraint change halts the system.</td></tr>
+    <tr><th>Required evidence</th><td>Constraint change log with countersignatures; drift detection; halt-on-unsigned-change enforcement.</td></tr>
+    <tr><th>Inbound tell</th><td>Templates mutate across burned accounts until the platform's interlock fires.</td></tr>
+    <tr><th>Enterprise tell</th><td>Constraints drift silently. Drift is then not a risk — it is the operating model.</td></tr>
+  </table>
+
+  <h2>4. IPT — the Identity–Purpose–Tolerance constraint triple</h2>
+  <p>An action is admissible only when all three constraints are simultaneously <strong>declared, verified, and revocable</strong>:</p>
+  <ul>
+    <li><strong>Identity</strong> — a revocable name bound to an accountable principal. <span class="mono">(G2)</span></li>
+    <li><strong>Purpose</strong> — the objective served and the authority under which the actor acts, bound at admission rather than inferred at runtime. <span class="mono">(G1, G5)</span></li>
+    <li><strong>Tolerance</strong> — declared bounds: budget, latency, blast radius, error budget, and halt conditions. <span class="mono">(G3, G4, G7)</span></li>
+  </ul>
+  <p>A trajectory missing any leg of the triple is inadmissible regardless of demonstrated capability. Capability is not authority.</p>
+
+  <h2>5. VFA — Validated Field Anchor</h2>
+  <p>A Validated Field Anchor is a named, dated, evidence-backed checkpoint that binds a <em>predicted</em> state to an <em>observed</em> state. Each anchor records:</p>
+  <ol>
+    <li>the observed value and its source;</li>
+    <li>the observation timestamp;</li>
+    <li>the tolerance band within which prediction and observation are permitted to diverge;</li>
+    <li>the accountable countersigner;</li>
+    <li>an append-only record of the comparison.</li>
+  </ol>
+  <p><strong>Admissibility rule:</strong> a trajectory that cannot reach a Validated Field Anchor within its declared tolerance before its next consequential action is inadmissible. This makes the boundary between observed reality and inferred state operational rather than rhetorical — the same boundary a world model crosses when it acts on its own imagined latents.</p>
+
+  <h2>6. Executive screen — five questions before you say yes</h2>
+  <ol>
+    <li>Who is the named, accountable human who can halt this? <span class="mono">(G5)</span></li>
+    <li>What is the inspectable origin trail of every claim? <span class="mono">(G1, G6)</span></li>
+    <li>What are the declared rooms, tools, budgets, and clocks? <span class="mono">(G3, G4)</span></li>
+    <li>Can every identity be revoked, and every path stopped? <span class="mono">(G2)</span></li>
+    <li>Who countersigns change to the constraints? <span class="mono">(G7)</span></li>
+  </ol>
+  <p>If any answer is "we'll figure that out later," the initiative is inadmissible as presented.</p>
+
+  <h2>7. Evidence discipline</h2>
+  <p>Audit evidence is retained in a private archive with a SHA-256 manifest covering every artifact. Public outputs are anonymized; identities implicated in fraud are never published, because those names may belong to victims of identity theft. Corrections to this note are appended to the revision history; dated versions are not overwritten.</p>
+
+  <h2>8. Revision history</h2>
+  <table>
+    <tr><th>Version</th><th>Date</th><th>Change</th></tr>
+    <tr><td class="mono">1.0</td><td class="mono">2026-11-21</td><td>Initial publication. Seven gates, IPT triple, VFA admissibility rule, executive screen.</td></tr>
+  </table>
+
+  <h2>9. Citation</h2>
+  <p class="cite">Santsaver, J. (2026). <em>AGS-7: Admission Gates for Autonomous Systems trending towards Continuous Recursive Self-Improvement (CRSI)</em>, v1.0. Aeon Flux Labs. https://aeonfluxlabs.com/methods/admission-gates/</p>
+
+  <footer>
+    © 2026 Aeon Flux Labs. Method note version of record. Author:
+    <a href="https://santsaver.com" rel="author">James Santsaver</a> ·
+    <a href="https://www.linkedin.com/in/santsaver" rel="me">LinkedIn</a><br>
+    Related: <a href="https://santsaver.com/will-ai-replace-cios/">Will AI Replace CIOs?</a> — the governance argument this instrument serves.
+  </footer>
+</article>
+</main>
+</body>
+</html>
